@@ -1,0 +1,51 @@
+name: Feature Request
+description: Suggest a feature
+
+body:
+  - type: dropdown
+    id: affected-packages
+    attributes:
+      label: Which module(s) are relevant/related to the feature request?
+      options:
+        - gui
+        - simulation
+        - common
+        - core
+      multiple: true
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature-goals
+    attributes:
+      label: Feature Goals
+    validations:
+      required: true
+
+  - type: textarea
+    id: success-criteria
+    attributes:
+      label: Success Criteria
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives-considered
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: true
